@@ -1,0 +1,26 @@
+.banner-container {
+    position: relative; /* Ensure the container is positioned relative to its containing block */
+  }
+  
+  .mobile-banner {
+    display: block; /* Ensure the banner is displayed as a block element */
+    width: 100%; /* Ensure the banner fills its container */
+    max-width: 100%; /* Ensure the banner doesn't exceed its natural size */
+  }
+  
+  .desktop-banner {
+    display: none; /* Hide the desktop banner by default */
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .mobile-banner {
+      display: none; /* Hide the mobile banner on screens wider than 1023px */
+    }
+  
+    .desktop-banner {
+      display: block; /* Display the desktop banner on screens wider than 1023px */
+      width: 100%; /* Ensure the banner fills its container */
+      max-width: 100%; /* Ensure the banner doesn't exceed its natural size */
+    }
+  }
+  
