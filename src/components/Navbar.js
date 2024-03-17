@@ -27,7 +27,9 @@ const Navbar = () => {
             className="menu"
           />
         </div>
-        <div> {/* Added wrapping div */}
+        <div>
+          {" "}
+          {/* Added wrapping div */}
           <ul className={`nav-links ${isOpen ? "open" : ""}`}>
             <li>
               <a href="#smart-sleep-coach" onClick={closeNavbar}>
@@ -69,7 +71,8 @@ const Navbar = () => {
               >
                 Sign In
               </button>
-              <span style={{ color: "#fff", marginTop: "2px" }}>or</span> {/* Added comma and fixed margin-top property */}
+              <span style={{ color: "#fff", marginTop: "2px" }}>or</span>{" "}
+              {/* Added comma and fixed margin-top property */}
               <button
                 style={{
                   backgroundColor: "transparent",
@@ -90,12 +93,40 @@ const Navbar = () => {
               />
             </div>
           )}
-        </div> {/* Added closing div */}
+        </div>{" "}
+        {/* Added closing div */}
         <div className="right-buttons">
-          <button style={{backgroundColor: 'transparent', color: '#fff', border: 'none', cursor: 'pointer', marginRight: '10px'}} onClick={closeNavbar}>Sign In</button>
-          <span style={{color: '#fff'}}>or</span>
-          <button style={{backgroundColor: 'transparent', color: '#fff', border: 'none', cursor: 'pointer', marginLeft: '10px'}} onClick={closeNavbar}>Register</button>
-          <img src={Cart} alt="cart" style={{width: '30px', cursor: 'pointer', marginLeft: '10px'}} onClick={closeNavbar} />
+          <button
+            style={{
+              backgroundColor: "transparent",
+              color: "#fff",
+              border: "none",
+              cursor: "pointer",
+              marginRight: "10px",
+            }}
+            onClick={closeNavbar}
+          >
+            Sign In
+          </button>
+          <span style={{ color: "#fff" }}>or</span>
+          <button
+            style={{
+              backgroundColor: "transparent",
+              color: "#fff",
+              border: "none",
+              cursor: "pointer",
+              marginLeft: "10px",
+            }}
+            onClick={closeNavbar}
+          >
+            Register
+          </button>
+          <img
+            src={Cart}
+            alt="cart"
+            style={{ width: "30px", cursor: "pointer", marginLeft: "10px" }}
+            onClick={closeNavbar}
+          />
         </div>
       </div>
     </nav>
