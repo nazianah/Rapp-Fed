@@ -1,0 +1,27 @@
+.container {
+    max-width: 100%;
+    overflow: hidden;
+  }
+  
+  .container img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: -5px;
+  }
+  
+  /* Media query for smaller screens (e.g., mobile devices) */
+  @media only screen and (max-width: 768px) {
+    .container img {
+      max-width: 100%; /* Adjust as needed */
+      height: auto; /* Adjust as needed */
+    }
+  }
+  
+  /* Media query for larger screens (e.g., desktop) */
+  @media only screen and (min-width: 769px) {
+    .container img {
+      width: 100%; /* Adjust as needed */
+      height: auto; /* Adjust as needed */
+    }
+  }
+  
