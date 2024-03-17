@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './FAQs.css';
+
 const FAQs = () => {
     const [expandedIndex, setExpandedIndex] = useState(-1);
     const [faqsToShow, setFaqsToShow] = useState([]);

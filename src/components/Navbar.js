@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import logo from "../Assets/Icons/Logo.svg";
-import "./Navbar.css";
+
 import menuIcon from "../Assets/Icons/menu.svg";
 import closeIcon from "../Assets/Icons/close.svg";
 import Cart from "../Assets/Icons/Cart-icon.svg";

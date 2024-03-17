@@ -6,7 +6,7 @@ import Content4 from '../Layout/Content4'
 import Content5 from '../Layout/Content5'
 import Content6 from '../Layout/Content6'
 import Content7 from '../Layout/Content7'
-import './Home.css'
+
 
 const Home = () => {
   return (

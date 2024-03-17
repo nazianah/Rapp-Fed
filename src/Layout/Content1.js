@@ -1,7 +1,7 @@
 import React from 'react';
 import Banner from '../Assets/Images/home-banner1-desktop.jpg';
 import BannerMobile from '../Assets/Images/home-banner1-mobile.jpg';
-import './Content1.css'; // Import CSS file for styling
+
 
 const Content1 = () => {
   return (

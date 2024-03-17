@@ -1,5 +1,5 @@
 import React from 'react'
-import './Content3.css'
+
 const Content3 = () => {
   return (
     <div className='text-container'>
