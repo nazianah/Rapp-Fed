@@ -55,7 +55,7 @@ const FAQs = () => {
         }
 
     ];
-
+ {/* eslint-disable-next-line */}
     useEffect(() => {
         // Determine the number of FAQs to show based on screen width
         const screenWidth = window.innerWidth;
@@ -66,6 +66,7 @@ const FAQs = () => {
         }
 
         setFaqsToShow(faqs.slice(0, numberOfFaqs)); // Slice the array to get the desired number of FAQs
+       
     }, []);
 
     return (
