@@ -1,0 +1,42 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns by default */
+}
+
+/* Make the first item span across both columns */
+.grid-container > :first-child {
+  grid-column: span 2;
+}
+
+/* Make the other items occupy one column each */
+.grid-container > :nth-child(n + 2) {
+  grid-column: auto;
+}
+
+@media screen and (max-width: 768px) {
+  /* For screens smaller than or equal to 768px (tablet and mobile) */
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px),
+       screen and (min-width: 1025px) {
+  /* For screens between 769px and 1024px (tablet) and screens larger than 1025px (desktop) */
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+  }
+  
+  .grid-container :nth-child(n + 4) {
+    order: 2;
+  }
+  
+  .grid-container :nth-child(n + 5) {
+    order: 1;
+  }
+  
+  .grid-container :nth-child(n + 6) {
+    order: 3;
+  }
+}

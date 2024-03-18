@@ -1,6 +1,7 @@
-import React from "react";
-import PictureDesktop from "../Assets/Images/how-it-works-desktop.jpg";
-import PictureMobile from "../Assets/Images/how-it-works-mobile.jpg";
+import React from 'react';
+import PictureDesktop from '../Assets/Images/how-it-works-desktop.jpg';
+import PictureMobile from '../Assets/Images/how-it-works-mobile.jpg';
+import './Content2.css';
 
 const Content2 = () => {
   return (

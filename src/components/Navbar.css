@@ -1,0 +1,262 @@
+.navbar {
+    background-color: #85C5B9;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: transform 0.3s ease-in-out; 
+    z-index: 1000;
+
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+.nav-links{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.nav-links.open{
+    display:block;
+    padding: 20px;
+    
+}
+
+.nav-links li{
+    margin-right: 20px;
+   
+}
+.nav-links li a {
+    color: inherit; /* Use the color of the parent container */
+    text-decoration: none; /* Remove default underline */
+    transition: color 0.3s ease; /* Add smooth color transition */
+}
+
+.nav-links li a:hover {
+    color: #ffd700; /* Change color on hover */
+}
+
+.logo{
+    margin-right: auto;
+}
+.menu-icon{
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+}
+.right-buttons {
+    display: none;
+    margin-left: auto;
+}
+.left-buttons {
+    top: 550%;
+    left: 1.7%;
+    position: absolute;
+}
+.nav-links.open .right-buttons {
+    display: flex;
+    align-items: center;
+
+}
+
+.right-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.right-buttons .button {
+    margin-right: 10px;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-weight: inherit;
+    cursor: pointer;
+}
+
+.cart {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 600px){
+    .right-buttons{
+        display: none;
+    }
+    .logo{
+        margin: auto;
+    }
+    .nav-container {
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        padding: 4px;
+        margin-top: 4px;
+
+    }
+    .menu-icon{
+        display: flex;
+        color: #fff;
+    }
+    .nav-links{
+        display: none;
+        flex-direction: column;
+        background-color: #85C5B9;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding-left: 20px;
+        padding-top: 5px;
+
+       
+    }
+    
+    .nav-links li {
+        padding-bottom: 18px;
+        font-weight: 600;
+    }
+
+    .nav-links li a {
+        color: inherit;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .nav-links li a:hover {
+        color: #ffd700;
+    }
+
+    .nav-links .open{
+        display: flex;
+    }
+    .left-buttons{
+        left: 3.2% !important;
+    }
+
+
+}
+@media (max-width: 1024px) {
+    /* Tablet responsiveness styles */
+    .left-buttons {
+        top: 550%;
+        left: 1.2%;
+        position: absolute;
+    }
+    
+    .right-buttons{
+        display: none;
+    }
+
+    .logo {
+        margin: auto;
+    }
+
+    .nav-container {
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        padding: 4px;
+        margin-top: 4px;
+    }
+
+    .menu-icon {
+        display: flex;
+        color: #fff;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #85c5b9;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding-left: 20px;
+        padding-top: 5px;
+    }
+
+    .nav-links li {
+        padding-bottom: 18px;
+        font-weight: 600;
+    }
+
+    .nav-links li a {
+        color: inherit;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .nav-links li a:hover {
+        color: #ffd700;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+}
+/* Desktop or larger screens */
+@media (min-width: 1025px) {
+    .nav-container {
+        /* Adjust as needed for desktop layout */
+        justify-content: space-around;
+        padding: 1rem 2rem;
+    }
+
+    .nav-links {
+        display: flex !important; /* Ensure the navigation links are visible */
+        flex-direction: row; /* Ensure the navigation links are displayed in a row */
+        background-color: transparent; /* Set background color to transparent */
+        position: static; /* Remove absolute positioning */
+        width: auto; /* Adjust width as needed */
+        padding: 0; /* Reset padding */
+    }
+
+    .nav-links li {
+        margin-right: 20px;
+        padding: 0; /* Reset padding */
+    }
+
+    .nav-links li a {
+        color: #fff;
+        transition: color 0.3s ease;
+    }
+
+    .nav-links li a:hover {
+        color: #ffd700;
+    }
+
+    .menu-icon {
+        display: none; /* Hide the menu icon on larger screens */
+    }
+
+    .right-buttons {
+        display: flex; /* Ensure right buttons are visible */
+    }
+
+    .right-buttons .button {
+        margin-right: 10px;
+        border: none;
+        background-color: transparent;
+        color: #fff;
+        font-weight: bold;
+        cursor: pointer;
+        transition: color 0.3s ease; /* Add transition effect for color change */
+    }
+    
+    .right-buttons .button:hover {
+        color: #ffd700 !important; /* Change color on hover */
+    }
+
+    .cart {
+        margin-left: 10px;
+        cursor: pointer;
+    }
+}
