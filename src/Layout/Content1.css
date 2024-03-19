@@ -117,8 +117,8 @@
   }
 
   .below-button {
-    bottom: 85px;
-    left: 60%;
+    bottom: 65px;
+    left: 73%;
     transform: translateX(-50%);
   }
 }
