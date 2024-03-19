@@ -68,4 +68,6 @@ npm start
 ## Screenshots
 
 ![App Screenshot](./src/Assets/Images/Phone.png)
+![App Screenshot](./src/Assets/Images/Tablet.png)
+![App Screenshot](./src/Assets/Images/Desktop.png)
 
