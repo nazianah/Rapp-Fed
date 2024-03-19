@@ -20,7 +20,7 @@
 }
 
 .text {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: #00000040;
   color: white;
   padding: 20px;
   border-radius: 10px;
