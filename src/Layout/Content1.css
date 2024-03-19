@@ -111,13 +111,13 @@
   }
 
   .text {
-    bottom: 250px;
-    left: 60%;
+    bottom: 105px;
+    left: 73%;
     transform: translateX(-50%);
   }
 
   .below-button {
-    bottom: 210px;
+    bottom: 85px;
     left: 60%;
     transform: translateX(-50%);
   }
