@@ -74,8 +74,10 @@ To view the website
   https://rapp-fed.vercel.app/
 ```
 ## Screenshots
-
+# Phone
 ![App Screenshot](./src/Assets/Images/Phone.png)
+# Tablet
 ![App Screenshot](./src/Assets/Images/Tablet.png)
+# Desktop
 ![App Screenshot](./src/Assets/Images/Desktop.png)
 
