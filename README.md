@@ -65,6 +65,14 @@ Run Project:
 ```
 npm start
 ```
+
+## Deployment
+
+To view the website
+
+```bash
+  https://rapp-fed.vercel.app/
+```
 ## Screenshots
 
 ![App Screenshot](./src/Assets/Images/Phone.png)
